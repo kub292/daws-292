@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 USERID=$(id -u)
 
@@ -10,7 +10,6 @@ else
     echo "You are super user"
 fi
 
-
 dnf install mysql -y 
 
 if [ $? -ne 0 ]
@@ -21,14 +20,14 @@ else
     echo " Installation of mysql is SUCCESS
 fi
 
-dnf install git -y
+dnf install git -y 
 
 if [ $? -ne 0 ]
 then 
     echo " Installation of GIT.... FAILURE"
     exit 1
-else 
-    echo "Installation of GIT.... SUCCESS" 
+else
+    echo " Installation of GIT is SUCCESS
 fi
 
-echo "Is script proceeding?"
+echo " Is script proceeding? "

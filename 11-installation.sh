@@ -17,17 +17,17 @@ then
     echo " Installation of mysql.... FAILURE"
     exit 1
 else
-    echo " Installation of mysql is SUCCESS
+    echo " Installation of mysql is SUCCESS"
 fi
 
-dnf install git -y 
+dnf install git -y
 
 if [ $? -ne 0 ]
 then 
     echo " Installation of GIT.... FAILURE"
     exit 1
 else
-    echo " Installation of GIT is SUCCESS
+    echo " Installation of GIT is SUCCESS"
 fi
 
 echo " Is script proceeding? "
